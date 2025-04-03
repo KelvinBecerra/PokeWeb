@@ -1,4 +1,9 @@
 # PokeWeb
+primero instalar node
+luego con eso se podran usar los paquetes que estan en npm
+Node.js es un entorno de ejecución para JavaScript en el lado del servidor.
+
+npm se usa para instalar y administrar paquetes de JavaScript, como frameworks (React, Express), bibliotecas y herramientas.
 #Se esta usando react con este proyecto, la manera de aplicarlo fue con vite fue 
 npm create vite@latest nombre-mi-proyecto
 'del npm crear un proyecto de ultima version de vite con el siguiente nombre'

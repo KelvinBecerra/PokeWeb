@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Cartas({name}) {
+function Cartas({name,habilidad,habilidad2,exp}) {
   return (
     <>
       <div>
@@ -8,10 +8,10 @@ function Cartas({name}) {
             <li>Nombre:{name}</li>
           
             <ul>Habilidades:
-            <li>habilidad1</li>
-            <li>habilidad2</li>
+            <li>{habilidad}</li>
+            <li>{habilidad2}</li>
             </ul>
-            <li>Experiencia:experiencia </li>
+            <li>Experiencia:{exp} </li>
            
         </ul>
 
