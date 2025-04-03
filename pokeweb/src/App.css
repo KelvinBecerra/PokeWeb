@@ -1,0 +1,18 @@
+body{
+    background-color: #f4f4f4;
+}
+button{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 1rem;
+  margin: 1rem;
+}
+.contenedor{
+  align-items: center;
+}
+ul{
+  color: black;
+}
