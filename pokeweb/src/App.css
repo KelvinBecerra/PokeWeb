@@ -12,6 +12,7 @@ button{
 }
 .contenedor{
   align-items: center;
+  padding: 1rem;
 }
 ul{
   color: black;

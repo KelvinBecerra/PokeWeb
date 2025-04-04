@@ -20,6 +20,7 @@ const mostrarvarios=async(numero)=>{
       const response=await fetch(`https://pokeapi.co/api/v2/pokemon/${n}`)
       const data=await response.json()
       componentes.push(<Cartas
+          key={n}//se agrega porque cada componente debe ser unico, si no esta se genera un error
           name={data.name}
           habilidad={data.abilities[0].ability.name} 
           habilidad2={data.abilities[1].ability.name}
@@ -32,6 +33,15 @@ const mostrarvarios=async(numero)=>{
     }
   
 }
+const borrar=()=>{
+  setcomponentes([])
+  setname('desconocido')
+  sethabilidades1('desconocido')
+  sethabilidades2('desconocido')
+  setexp('desconocida')
+  setnumero('')
+  setCantidad(0)
+}
   return (
 
     
@@ -40,6 +50,8 @@ const mostrarvarios=async(numero)=>{
 
     
     <div className='contenedor'>
+      <p>Borrar</p>
+      <button onClick={borrar}>---</button>
       <p >Ingrese el numero de un pokemon especifico</p>
 
       <input
